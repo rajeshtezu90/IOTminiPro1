@@ -1,0 +1,19 @@
+<!-- {% if selected == 'on' %}
+	<script> alert("selected"); console.log({{selected}}); </script>
+{{selected}}
+
+{% else %}
+	<script> alert(" Not selected"); console.log({{selected}}); </script>
+{{selected}}
+
+{% endif %}
+
+-->
+
+<form action="" method="post">
+	{% csrf_token %}
+	<input type="radio" name="led" value="on"><label>ON</label>
+	<input type="radio" name="led" value="off"><label>OFF</label>
+	<input type="submit" value="submit">
+</form>
+
