@@ -25,7 +25,7 @@ SECRET_KEY = '_cj#y1n3wo$kpul!tz80-5s*1ysofo3@iq9epqn3-vg-^1f_9t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.31.104'] # Add your local IP to access from other device
 
 
 # Application definition

@@ -12,6 +12,7 @@ def index(request):
     gpio.setup(11, gpio.OUT)
     gpio.setup(11, gpio.LOW)
     selected = request.POST.get('led', False)
+    print(selected)
 
     if selected == 'on':
         gpio.output(11, True)
